@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aless Faustini</title>
+    <link rel="icon" type="image/x-icon" href="img/alessicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <header>
+
+            <!--icono vuelta a home-->
+            <a href="index.html" class="navegacion_logo"><img src="img/alessicon.png" alt="alessandra">Aless Faustini</a>
+            
+            <!--boton menu desplegable movil y ipad-->
+            <input type="checkbox" id="check" class="caja-check">
+
+            <label class="cabecera__burger" for="check">
+                <div></div>
+                <div></div>
+            </label>
+            <!--menú de navegación superior-->
+            <nav class="navegacion">
+                <ul class="navegacion_menu">
+                    <li><a href="quiensoy.html"><img src="img/quiensoy.png" alt="quien soy"></a></li> <!--quien soy-->
+                    <li><a href="cv.html"><img src="img/cv.png" alt="cv alessandra"></a></li> <!--cv-->
+                    <li><a href="portfolio.html"><img src="img/portfolio.png" alt="portfolio"></a></li> <!--portfolio-->
+                    <li><a href="contacto.html"><img src="img/contacto.png" alt="contacto"></a></li> <!--contacto-->
+                </ul>
+            </nav>
+            
+        </header>
+        <!--contenido-->
+        <div class="contenido_contacto">
+            <div class="circ_fucsia"></div> <!--circulo fucsia decoración-->
+            <div class="circ_aqua"></div><!--circulo azul decoración-->
+            <div class="ventana_contacto">
+                <div class="ventana_cabecera">
+                    <div class="raya"></div>
+                    <div class="punto"></div>
+                </div>
+                <div class="ventana_cuerpo_contacto">
+                    <fieldset class="formulario">
+                        <h2 class="titulo_seccion">Hablemos</h2>
+                        <form name="formulario" method="post" action="mailto:alessfaustini@gmail.com">
+                            <fieldset class="datos_personales">
+                                <legend>Datos Personales</legend>
+                                <label>Nombre:</label> <input type="text" name="nombre" placeholder="Introduce tu nombre" 
+                                minlength="2" maxlength="40" required>
+                                <br>
+                                <label>Apellidos:</label> <input type="text" name="apellidos" placeholder="Introduce tu apellido" minlength="2" maxlength="40" required>
+                                <br>
+                                <label>Email:</label><input type="email" name="email" placeholder="correo@example.com" required>
+                            </fieldset>
+        
+                            <!--Zona comentarios-->
+                            <p><span>Déjame tu mensaje</span></p>
+                            <textarea name="texto" cols="80" rows="10" placeholder="¡Escribe algo, no seas tímid@!"></textarea>
+                            <br>
+                            <input type="submit" value="Enviar" class="boton" onclick="alert('Formulario recibido, me pondré en contacto cuanto antes')">
+                            <input type="reset" value="Restablecer" class="boton">
+                            <input type="file" name="adjuntar" value="Seleccionar archivo" class="boton">
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </div> <!--FIN DEL CONTENIDO-->
+    </section>
+    <footer class="contacto_footer">
+        <div class="copyright">
+            <p>&copy;Web personal creada para la materia Lenguaje de Marcas <br>DAM</p>
+        </div>
+
+        <ul class="redes_sociales">
+            <li><a href="mailto:alessfaustini@gmail.com">
+                <ion-icon name="mail-open-outline"></ion-icon>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/alessandra-faustini/">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+            <li><a href="https://github.com/AlessBanana">
+                <ion-icon name="logo-github"></ion-icon>
+            </a></li>
+        </ul>
+    </footer>
+</body>
+<!--habilitamos los iconos-->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
